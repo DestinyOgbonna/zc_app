@@ -3,11 +3,19 @@ import 'package:zurichat/app/app.locator.dart';
 import 'package:zurichat/app/app.router.dart';
 import 'package:zurichat/models/draft_data_holder_model.dart';
 import 'package:zurichat/models/user_post.dart';
+<<<<<<< HEAD
 import 'package:zurichat/services/connectivity_service.dart';
 import 'package:zurichat/services/local_storage_services.dart';
 import 'package:zurichat/utilities/enums.dart';
 import 'package:zurichat/utilities/storage_keys.dart';
 import 'package:zurichat/constants/app_strings.dart';
+=======
+import 'package:zurichat/services/app_services/connectivity_service.dart';
+import 'package:zurichat/services/app_services/local_storage_services.dart';
+import 'package:zurichat/utilities/enums.dart';
+import 'package:zurichat/utilities/constants/storage_keys.dart';
+import 'package:zurichat/utilities/constants/app_strings.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 import 'package:zurichat/app/app.logger.dart';
@@ -22,6 +30,7 @@ class DraftViewModel extends BaseViewModel {
   List<DraftDataHolder> widgetBuilderList = [];
 
   void get drafts {
+<<<<<<< HEAD
     var currentOrgId =
     _storageService.getString(StorageKeys.currentOrgId);
     var currentUserId =
@@ -38,6 +47,21 @@ class DraftViewModel extends BaseViewModel {
       dmStoredDrafts.forEach((element) {
         if(currentOrgId == jsonDecode(element)['currentOrgId'] &&
             currentUserId == jsonDecode(element)['currentUserId']){
+=======
+    var currentOrgId = _storageService.getString(StorageKeys.currentOrgId);
+    var currentUserId = _storageService.getString(StorageKeys.currentUserId);
+    var dmStoredDrafts =
+        _storageService.getStringList(StorageKeys.currentUserDmIdDrafts);
+    var channelStoredDrafts =
+        _storageService.getStringList(StorageKeys.currentUserChannelIdDrafts);
+    var threadStoredDrafts =
+        _storageService.getStringList(StorageKeys.currentUserThreadIdDrafts);
+
+    if (dmStoredDrafts != null) {
+      dmStoredDrafts.forEach((element) {
+        if (currentOrgId == jsonDecode(element)['currentOrgId'] &&
+            currentUserId == jsonDecode(element)['currentUserId']) {
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
           var mapKey = jsonDecode(element);
 
           widgetBuilderList.add(DraftDataHolder(
@@ -52,8 +76,13 @@ class DraftViewModel extends BaseViewModel {
 
     if (channelStoredDrafts != null) {
       channelStoredDrafts.forEach((element) {
+<<<<<<< HEAD
         if(currentOrgId == jsonDecode(element)['currentOrgId'] &&
             currentUserId == jsonDecode(element)['currentUserId']){
+=======
+        if (currentOrgId == jsonDecode(element)['currentOrgId'] &&
+            currentUserId == jsonDecode(element)['currentUserId']) {
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
           var mapKey = jsonDecode(element);
 
           widgetBuilderList.add(DraftDataHolder(
@@ -68,8 +97,13 @@ class DraftViewModel extends BaseViewModel {
 
     if (threadStoredDrafts != null) {
       threadStoredDrafts.forEach((element) {
+<<<<<<< HEAD
         if(currentOrgId == jsonDecode(element)['currentOrgId'] &&
             currentUserId == jsonDecode(element)['currentUserId']){
+=======
+        if (currentOrgId == jsonDecode(element)['currentOrgId'] &&
+            currentUserId == jsonDecode(element)['currentUserId']) {
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
           var mapKey = jsonDecode(element);
 
           widgetBuilderList.add(DraftDataHolder(
@@ -97,11 +131,19 @@ class DraftViewModel extends BaseViewModel {
     var removeThreadDraft = '';
 
     var dmStoredDrafts =
+<<<<<<< HEAD
     _storageService.getStringList(StorageKeys.currentUserDmIdDrafts);
     var channelStoredDrafts =
     _storageService.getStringList(StorageKeys.currentUserChannelIdDrafts);
     var threadStoredDrafts =
     _storageService.getStringList(StorageKeys.currentUserThreadIdDrafts);
+=======
+        _storageService.getStringList(StorageKeys.currentUserDmIdDrafts);
+    var channelStoredDrafts =
+        _storageService.getStringList(StorageKeys.currentUserChannelIdDrafts);
+    var threadStoredDrafts =
+        _storageService.getStringList(StorageKeys.currentUserThreadIdDrafts);
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 
     if (dmStoredDrafts != null) {
       dmStoredDrafts.forEach((element) {

@@ -1,16 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:zurichat/ui/shared/bottom_sheets/zuri_chat_bottomsheet.dart';
+<<<<<<< HEAD
 import 'package:zurichat/ui/shared/text_styles.dart';
 import 'package:zurichat/ui/shared/zuri_appbar.dart';
 import 'package:zurichat/ui/shared/zuri_loader.dart';
 import 'package:zurichat/utilities/internalization/localization/app_localization.dart';
+=======
+import 'package:zurichat/utilities/constants/text_styles.dart';
+import 'package:zurichat/ui/shared/dumb_widgets/zuri_appbar.dart';
+import 'package:zurichat/ui/shared/dumb_widgets/zuri_loader.dart';
+import 'package:zurichat/utilities/internationalization/app_localization.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'package:overlay_support/overlay_support.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked/stacked_annotations.dart';
 
+<<<<<<< HEAD
 import '../../../../general_widgets/channel_icon.dart';
 import '../../../../models/user_post.dart';
 import '../../../shared/colors.dart';
+=======
+import '../../../shared/dumb_widgets/channel_icon.dart';
+import '../../../../models/user_post.dart';
+import '../../../../utilities/constants/colors.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import '../../../shared/smart_widgets/thread_card/thread_card_view.dart';
 import '../../dm_user/icons/zap_icon.dart';
 import 'thread_detail_viewmodel.dart';

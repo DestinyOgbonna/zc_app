@@ -1,10 +1,19 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:zurichat/constants/app_strings.dart';
 import 'package:zurichat/utilities/internalization/localization/app_localization.dart';
 import '../../../shared/colors.dart';
 import '../../../shared/long_button.dart';
 import '../../../shared/text_field.dart';
 import '../../../shared/ui_helpers.dart';
+=======
+import 'package:zurichat/utilities/constants/app_strings.dart';
+import 'package:zurichat/utilities/internationalization/app_localization.dart';
+import '../../../../utilities/constants/colors.dart';
+import '../../../shared/dumb_widgets/long_button.dart';
+import '../../../shared/dumb_widgets/text_field.dart';
+import '../../../../utilities/constants/ui_helpers.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'package:stacked/stacked.dart';
 
 import 'create_organization_viewmodel.dart';

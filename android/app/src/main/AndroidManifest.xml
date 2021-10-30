@@ -1,5 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     package="com.example.hng">
+=======
+    package="com.zuri.chat.app">
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -7,7 +11,11 @@
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
+<<<<<<< HEAD
         android:label="ZuriChat"
+=======
+        android:label="Zuri Chat"
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
@@ -40,6 +48,7 @@
 
             <!-- App Links -->
             <intent-filter android:autoVerify="true">
+<<<<<<< HEAD
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
@@ -48,6 +57,16 @@
                     android:scheme="https"
                     android:host="zuri.chat"
                     android:pathPrefix="/mobile"/>
+=======
+              <action android:name="android.intent.action.VIEW" />
+              <category android:name="android.intent.category.DEFAULT" />
+              <category android:name="android.intent.category.BROWSABLE" />
+              <!-- Accepts URIs that begin with https://YOUR_HOST -->
+              <data
+                android:scheme="https"
+                android:host="zuri.chat" 
+                android:pathPrefix="/mobile"/>
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
             </intent-filter>
         </activity>
         <!-- Don't delete the meta-data below.

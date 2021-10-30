@@ -1,21 +1,37 @@
 import 'dart:convert';
 
+<<<<<<< HEAD
 import 'package:zurichat/constants/app_strings.dart';
 import 'package:zurichat/package/base/server-request/api/zuri_api.dart';
 import 'package:zurichat/services/local_storage_services.dart';
 import 'package:zurichat/services/user_service.dart';
 import 'package:zurichat/utilities/constants.dart';
 import 'package:zurichat/utilities/storage_keys.dart';
+=======
+import 'package:zurichat/utilities/constants/app_strings.dart';
+import 'package:zurichat/utilities/api_handlers/zuri_api.dart';
+import 'package:zurichat/services/app_services/local_storage_services.dart';
+import 'package:zurichat/services/in_review/user_service.dart';
+import 'package:zurichat/utilities/constants/app_constants.dart';
+import 'package:zurichat/utilities/constants/storage_keys.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'package:intl/intl.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 import 'package:zurichat/app/app.logger.dart';
 import '../../../../app/app.locator.dart';
 import '../../../../models/user_post.dart';
+<<<<<<< HEAD
 import '../../../../package/base/server-request/api/zuri_api.dart';
 import '../../../../services/local_storage_services.dart';
 import '../../../../services/user_service.dart';
 import '../../../../utilities/constants.dart';
+=======
+import '../../../../utilities/api_handlers/zuri_api.dart';
+import '../../../../services/app_services/local_storage_services.dart';
+import '../../../../services/in_review/user_service.dart';
+import '../../../../utilities/constants/app_constants.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import '../../../../utilities/enums.dart';
 
 class ThreadDetailViewModel extends BaseViewModel {
@@ -136,12 +152,19 @@ class ThreadDetailViewModel extends BaseViewModel {
   var storedDraft = '';
 
   void getDraft(userPost) {
+<<<<<<< HEAD
     var currentOrgId =
     storageService.getString(StorageKeys.currentOrgId);
     var currentUserId =
     storageService.getString(StorageKeys.currentUserId);
     List<String>? spList =
     storageService.getStringList(StorageKeys.currentUserThreadIdDrafts);
+=======
+    var currentOrgId = storageService.getString(StorageKeys.currentOrgId);
+    var currentUserId = storageService.getString(StorageKeys.currentUserId);
+    List<String>? spList =
+        storageService.getStringList(StorageKeys.currentUserThreadIdDrafts);
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
     if (spList != null) {
       for (String e in spList) {
         if (jsonDecode(e)['userPostId'] == userPost.id &&
@@ -159,10 +182,15 @@ class ThreadDetailViewModel extends BaseViewModel {
   }
 
   void storeDraft(userPost, value) {
+<<<<<<< HEAD
     var currentOrgId =
     storageService.getString(StorageKeys.currentOrgId);
     var currentUserId =
     storageService.getString(StorageKeys.currentUserId);
+=======
+    var currentOrgId = storageService.getString(StorageKeys.currentOrgId);
+    var currentUserId = storageService.getString(StorageKeys.currentUserId);
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
     var keyMap = {
       'draft': value,
       'time': '${DateTime.now()}',
@@ -175,7 +203,11 @@ class ThreadDetailViewModel extends BaseViewModel {
     };
 
     List<String>? spList =
+<<<<<<< HEAD
     storageService.getStringList(StorageKeys.currentUserThreadIdDrafts);
+=======
+        storageService.getStringList(StorageKeys.currentUserThreadIdDrafts);
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 
     if (value.length > 0 && spList != null) {
       spList.add(json.encode(keyMap));

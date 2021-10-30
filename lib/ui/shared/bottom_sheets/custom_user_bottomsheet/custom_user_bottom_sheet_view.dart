@@ -1,9 +1,18 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:zurichat/constants/app_strings.dart';
 
 import 'package:zurichat/ui/shared/colors.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
+=======
+import 'package:zurichat/utilities/constants/app_strings.dart';
+
+import 'package:zurichat/utilities/constants/colors.dart';
+import 'package:stacked/stacked.dart';
+import 'package:stacked_services/stacked_services.dart';
+import 'package:zurichat/utilities/internationalization/app_localization.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 
 import 'custom_user_bottom_sheet_viewmodel.dart';
 import 'widgets/custom_button.dart';
@@ -23,6 +32,10 @@ class CustomUserBottomSheetView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final height = MediaQuery.of(context).size.height;
+<<<<<<< HEAD
+=======
+    final local = AppLocalization.of(context);
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
     final bool _dark = Theme.of(context).brightness == Brightness.dark;
     return ViewModelBuilder<CustomUserBottomSheetViewModel>.reactive(
       builder: (context, model, child) => model.isBusy
@@ -54,7 +67,11 @@ class CustomUserBottomSheetView extends StatelessWidget {
                             children: [
                               // CustomButton(text: Msg, onPressed: () {}),
                               CustomButton(
+<<<<<<< HEAD
                                 text: EditProfile,
+=======
+                                text: local!.editProfileButton,
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
                                 onPressed: () => model.navigateToEditProfile(),
                               ),
                               // CustomButton.icon(
@@ -64,11 +81,19 @@ class CustomUserBottomSheetView extends StatelessWidget {
                           ),
                         ),
                         const Divider(),
+<<<<<<< HEAD
                         const CustomProfileTile(
                             title: Track, subtitle: MobileDev),
                         const Divider(),
                         CustomProfileTile(
                           title: DisplayName,
+=======
+                        CustomProfileTile(
+                            title: local.whatIDo, subtitle: MobileDev),
+                        const Divider(),
+                        CustomProfileTile(
+                          title: local.displayName,
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
                           subtitle: model.userModel!.displayName ?? '',
                         ),
                         // const Divider(),
@@ -102,12 +127,20 @@ class CustomUserBottomSheetView extends StatelessWidget {
                         // ),
                         const Divider(),
                         CustomProfileTile(
+<<<<<<< HEAD
                           title: Number,
+=======
+                          title: local.mobileNumber,
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
                           subtitle: model.userModel!.phoneNumber ?? '',
                         ),
                         const Divider(),
                         CustomProfileTile(
+<<<<<<< HEAD
                           title: EmailAddress,
+=======
+                          title: local.emailAddress,
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
                           subtitle: model.userModel!.email!,
                         ),
                       ],

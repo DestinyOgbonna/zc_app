@@ -1,13 +1,22 @@
 import 'package:zurichat/app/app.logger.dart';
+<<<<<<< HEAD
 import 'package:zurichat/constants/app_strings.dart';
 import 'package:zurichat/package/base/server-request/channels/channels_api_service.dart';
+=======
+import 'package:zurichat/utilities/constants/app_strings.dart';
+import 'package:zurichat/services/messaging_services/channels_api_service.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 
 import '../../../../app/app.locator.dart';
 import '../../../../app/app.router.dart';
 import '../../../../models/organization_model.dart';
+<<<<<<< HEAD
 import '../../../../package/base/server-request/organization_request/organization_api_service.dart';
+=======
+import '../../../../services/core_services/organization_api_service.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import '../../../../utilities/enums.dart';
 
 class CreateOrganizationViewModel extends BaseViewModel {

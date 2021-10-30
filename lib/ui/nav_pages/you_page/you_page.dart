@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+<<<<<<< HEAD
 import 'package:zurichat/constants/app_strings.dart';
 import 'package:zurichat/ui/shared/colors.dart';
 import 'package:zurichat/ui/shared/text_styles.dart';
@@ -7,6 +8,15 @@ import 'package:zurichat/ui/shared/zuri_appbar.dart';
 import 'package:zurichat/utilities/internalization/localization/app_localization.dart';
 import 'package:stacked/stacked.dart';
 import '../../../general_widgets/menu_item_tile.dart';
+=======
+import 'package:zurichat/utilities/constants/app_strings.dart';
+import 'package:zurichat/utilities/constants/colors.dart';
+import 'package:zurichat/utilities/constants/text_styles.dart';
+import 'package:zurichat/ui/shared/dumb_widgets/zuri_appbar.dart';
+import 'package:zurichat/utilities/internationalization/app_localization.dart';
+import 'package:stacked/stacked.dart';
+import '../../shared/dumb_widgets/menu_item_tile.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'widgets/profile_page_head.dart';
 import 'widgets/status_form.dart';
 import 'you_page_viewmodel.dart';
@@ -25,7 +35,11 @@ class YouPage extends StatelessWidget {
       viewModelBuilder: () => YouPageViewModel(),
       onModelReady: (model) {
         model.fetchStatus();
+<<<<<<< HEAD
         model.getUserPresence();
+=======
+        model.getUserPresence(active: local!.active, away: local.away);
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
       },
       builder: (context, model, child) => Scaffold(
         appBar: ZuriAppBar(
@@ -52,7 +66,11 @@ class YouPage extends StatelessWidget {
                 const SizedBox(height: 30),
                 StatusForm(
                   onPressed: model.setStatus,
+<<<<<<< HEAD
                   statusText: model.statusText,
+=======
+                  statusText: local!.statusHint,
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
                   tagIcon: model.tagIcon,
                   clearOnPressed: model.clearStatus,
                   // iconData: model.tag,
@@ -77,7 +95,11 @@ class YouPage extends StatelessWidget {
                   topBorder: false,
                   text: Text.rich(
                     TextSpan(
+<<<<<<< HEAD
                       text: local!.setStatusText,
+=======
+                      text: local.setStatusText,
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
                       style: _tileStyle,
                       children: [
                         TextSpan(

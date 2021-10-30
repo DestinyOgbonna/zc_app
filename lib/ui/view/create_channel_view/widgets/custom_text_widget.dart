@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
+<<<<<<< HEAD
 import '../../../shared/colors.dart';
+=======
+import '../../../../utilities/constants/colors.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 
 class CustomTextWidget extends StatelessWidget {
   final String text;

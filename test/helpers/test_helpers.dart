@@ -2,6 +2,7 @@ import 'package:zurichat/app/app.locator.dart';
 import 'package:zurichat/app/app.router.dart';
 import 'package:zurichat/models/channels_search_model.dart';
 import 'package:zurichat/models/user_search_model.dart';
+<<<<<<< HEAD
 import 'package:zurichat/package/base/jump_to_request/jump_to_api.dart';
 import 'package:zurichat/package/base/server-request/api/zuri_api.dart';
 import 'package:zurichat/package/base/server-request/channels/channels_api_service.dart';
@@ -12,6 +13,18 @@ import 'package:zurichat/services/connectivity_service.dart';
 import 'package:zurichat/services/local_storage_services.dart';
 import 'package:zurichat/services/media_service.dart';
 import 'package:zurichat/services/user_service.dart';
+=======
+import 'package:zurichat/services/in_review/jump_to_api.dart';
+import 'package:zurichat/utilities/api_handlers/zuri_api.dart';
+import 'package:zurichat/services/messaging_services/channels_api_service.dart';
+import 'package:zurichat/services/messaging_services/dms_api_service.dart';
+import 'package:zurichat/services/core_services/organization_api_service.dart';
+import 'package:zurichat/services/messaging_services/centrifuge_rtc_service.dart';
+import 'package:zurichat/services/app_services/connectivity_service.dart';
+import 'package:zurichat/services/app_services/local_storage_services.dart';
+import 'package:zurichat/services/app_services/media_service.dart';
+import 'package:zurichat/services/in_review/user_service.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'package:zurichat/utilities/enums.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
@@ -103,6 +116,10 @@ MockDialogService getAndRegisterDialogServiceMock(
     variant: DialogType.skinTone,
   )).thenAnswer((realInvocation) => response);
   locator.registerSingleton<DialogService>(service);
+<<<<<<< HEAD
+=======
+
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
   return service;
 }
 

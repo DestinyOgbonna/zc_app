@@ -10,6 +10,7 @@ import 'package:stacked/stacked.dart';
 import 'package:stacked/stacked_annotations.dart';
 import 'package:stacked_services/stacked_services.dart';
 
+<<<<<<< HEAD
 import '../package/base/jump_to_request/jump_to_api.dart';
 import '../package/base/server-request/channels/channels_api_service.dart';
 import '../package/base/server-request/dms/dms_api_service.dart';
@@ -22,6 +23,21 @@ import '../services/notification_service.dart';
 import '../services/status_service.dart';
 import '../services/user_service.dart';
 import '../services/zuri_theme_service.dart';
+=======
+import '../services/app_services/connectivity_service.dart';
+import '../services/app_services/local_storage_services.dart';
+import '../services/app_services/localization_service.dart';
+import '../services/app_services/media_service.dart';
+import '../services/app_services/notification_service.dart';
+import '../services/app_services/zuri_theme_service.dart';
+import '../services/core_services/organization_api_service.dart';
+import '../services/in_review/jump_to_api.dart';
+import '../services/in_review/status_service.dart';
+import '../services/in_review/user_service.dart';
+import '../services/messaging_services/centrifuge_rtc_service.dart';
+import '../services/messaging_services/channels_api_service.dart';
+import '../services/messaging_services/dms_api_service.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 
 final locator = StackedLocator.instance;
 
@@ -57,4 +73,8 @@ Future setupLocator(
   locator.registerSingleton(centrifugeService);
 
   locator.registerLazySingleton(() => StatusService());
+<<<<<<< HEAD
+=======
+  locator.registerLazySingleton(() => OrganizationApiService());
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 }

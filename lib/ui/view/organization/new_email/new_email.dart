@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD:lib/ui/view/organization/new_email/new_email.dart
 import 'package:zurichat/ui/shared/text_styles.dart';
 import 'package:zurichat/utilities/internalization/localization/app_localization.dart';
+=======
+import 'package:zurichat/utilities/constants/text_styles.dart';
+import 'package:zurichat/utilities/internationalization/app_localization.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6:lib/ui/view/workspace/new_email/new_email.dart
 import 'package:stacked/stacked.dart';
 import 'package:stacked_hooks/stacked_hooks.dart';
 

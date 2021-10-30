@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:stacked/stacked.dart';
 import 'package:zurichat/ui/nav_pages/plugin_page/widgets/custom_appbar.dart';
 import 'package:zurichat/ui/nav_pages/plugin_page/widgets/custom_plugin_list_tile.dart';
@@ -8,6 +6,7 @@ import 'package:zurichat/ui/nav_pages/plugin_page/widgets/custom_search_field.da
 import '../../../app/app.logger.dart';
 
 
+<<<<<<< HEAD
 import 'plugin_viewmodel.dart';
 
 class AddPluginView extends StatelessWidget {
@@ -74,3 +73,18 @@ class AddPluginView extends StatelessWidget {
     );
   }
 }
+=======
+import 'add_plugin_viewmodel.dart';
+
+class AddPluginView extends StatelessWidget {
+ const AddPluginView({Key? key}) : super(key: key);
+
+ @override
+ Widget build(BuildContext context) {
+   return ViewModelBuilder<AddPluginViewModel>.reactive(
+     builder: (context, model, child) => const Scaffold(),
+     viewModelBuilder: () => AddPluginViewModel(),
+   );
+ }
+}
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6

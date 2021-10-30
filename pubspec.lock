@@ -35,7 +35,11 @@ packages:
       name: async
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "2.8.1"
+=======
+    version: "2.8.2"
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
   auto_size_text_pk:
     dependency: transitive
     description:
@@ -280,7 +284,7 @@ packages:
       name: dio
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "4.0.0"
+    version: "4.0.1"
   dots_indicator:
     dependency: transitive
     description:
@@ -416,7 +420,11 @@ packages:
       name: flutter_plugin_android_lifecycle
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "2.0.3"
+=======
+    version: "2.0.4"
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
   flutter_screenutil:
     dependency: "direct main"
     description:
@@ -468,7 +476,11 @@ packages:
       name: font_awesome_flutter
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "9.1.0"
+=======
+    version: "9.2.0"
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
   freezed:
     dependency: "direct dev"
     description:
@@ -571,6 +583,7 @@ packages:
     dependency: "direct main"
     description:
       name: image_picker
+<<<<<<< HEAD
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.8.4+2"
@@ -587,6 +600,24 @@ packages:
       name: image_picker_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
+=======
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.8.4+3"
+  image_picker_for_web:
+    dependency: transitive
+    description:
+      name: image_picker_for_web
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.1.4"
+  image_picker_platform_interface:
+    dependency: transitive
+    description:
+      name: image_picker_platform_interface
+      url: "https://pub.dartlang.org"
+    source: hosted
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
     version: "2.4.1"
   intl:
     dependency: "direct main"
@@ -657,7 +688,7 @@ packages:
       name: matcher
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.12.10"
+    version: "0.12.11"
   meta:
     dependency: "direct main"
     description:
@@ -671,7 +702,11 @@ packages:
       name: mime
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "1.0.0"
+=======
+    version: "1.0.1"
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
   mockito:
     dependency: "direct dev"
     description:
@@ -839,7 +874,11 @@ packages:
       name: process
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "4.2.3"
+=======
+    version: "4.2.4"
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
   protobuf:
     dependency: transitive
     description:
@@ -1061,7 +1100,11 @@ packages:
       name: test_api
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "0.4.2"
+=======
+    version: "0.4.3"
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
   timing:
     dependency: transitive
     description:
@@ -1194,7 +1237,11 @@ packages:
       name: webview_flutter
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "2.1.1"
+=======
+    version: "2.1.2"
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
   webview_flutter_android:
     dependency: transitive
     description:
@@ -1222,7 +1269,7 @@ packages:
       name: win32
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.2.9"
+    version: "2.2.10"
   xdg_directories:
     dependency: transitive
     description:

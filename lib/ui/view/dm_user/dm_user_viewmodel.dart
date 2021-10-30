@@ -2,11 +2,19 @@ import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:zurichat/app/app.locator.dart';
+<<<<<<< HEAD
 import 'package:zurichat/services/local_storage_services.dart';
 import 'package:zurichat/ui/view/dm_user/dummy_data/models/message.dart';
 import 'package:zurichat/ui/view/dm_user/dummy_data/models/user.dart';
 import 'package:zurichat/utilities/enums.dart';
 import 'package:zurichat/utilities/storage_keys.dart';
+=======
+import 'package:zurichat/models/message.dart';
+import 'package:zurichat/models/user.dart';
+import 'package:zurichat/services/app_services/local_storage_services.dart';
+import 'package:zurichat/utilities/enums.dart';
+import 'package:zurichat/utilities/constants/storage_keys.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 import 'package:zurichat/app/app.logger.dart';
@@ -24,12 +32,19 @@ class DmUserViewModel extends FormViewModel {
   var storedDraft = '';
 
   void getDraft(receiverId) {
+<<<<<<< HEAD
     var currentOrgId =
     _storageService.getString(StorageKeys.currentOrgId);
     var currentUserId =
     _storageService.getString(StorageKeys.currentUserId);
     List<String>? spList =
     _storageService.getStringList(StorageKeys.currentUserDmIdDrafts);
+=======
+    var currentOrgId = _storageService.getString(StorageKeys.currentOrgId);
+    var currentUserId = _storageService.getString(StorageKeys.currentUserId);
+    List<String>? spList =
+        _storageService.getStringList(StorageKeys.currentUserDmIdDrafts);
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
     if (spList != null) {
       for (String e in spList) {
         if (jsonDecode(e)['receiverId'] == receiverId &&
@@ -46,10 +61,15 @@ class DmUserViewModel extends FormViewModel {
   }
 
   void storeDraft(receiverId, value) {
+<<<<<<< HEAD
     var currentOrgId =
     _storageService.getString(StorageKeys.currentOrgId);
     var currentUserId =
     _storageService.getString(StorageKeys.currentUserId);
+=======
+    var currentOrgId = _storageService.getString(StorageKeys.currentOrgId);
+    var currentUserId = _storageService.getString(StorageKeys.currentUserId);
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
     var keyMap = {
       'draft': value,
       'time': '${DateTime.now()}',
@@ -60,7 +80,11 @@ class DmUserViewModel extends FormViewModel {
     };
 
     List<String>? spList =
+<<<<<<< HEAD
     _storageService.getStringList(StorageKeys.currentUserDmIdDrafts);
+=======
+        _storageService.getStringList(StorageKeys.currentUserDmIdDrafts);
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 
     if (value.length > 0 && spList != null) {
       spList.add(json.encode(keyMap));
@@ -138,7 +162,11 @@ class DmUserViewModel extends FormViewModel {
       await storage.setString(messageID, json.encode(savedMessageMap));
       log.i(savedMessageMap);
       final len = storage.getStringList(StorageKeys.savedItem);
+<<<<<<< HEAD
       log.w(len!.length.toString());
+=======
+      log.wtf(len!.length.toString());
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
     }
   }
 
@@ -175,6 +203,16 @@ class DmUserViewModel extends FormViewModel {
     notifyListeners();
   }
 
+
+  void popScreens(receiverId, value) {
+    navigationService.back();
+    storeDraft(receiverId, value);
+  }
+
+  void deleteMessage(Message message) {
+    chatMessages.remove(message);
+    notifyListeners();
+  }
 
   void popScreens(receiverId, value) {
     navigationService.back();

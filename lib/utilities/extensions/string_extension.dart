@@ -29,5 +29,12 @@ extension StringExtension on String {
 
   String get initials {
     return split(' ').map((e) => e.split('').first.toUpperCase()).join();
+<<<<<<< HEAD
+=======
+  }
+
+  String capitalize() {
+    return "${this[0].toUpperCase()}${substring(1)}";
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
   }
 }

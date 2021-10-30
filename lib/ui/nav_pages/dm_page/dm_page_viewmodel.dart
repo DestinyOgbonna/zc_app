@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import 'package:zurichat/services/local_storage_services.dart';
+=======
+import 'package:zurichat/services/app_services/local_storage_services.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 
 import '../../../app/app.locator.dart';
 import '../../../app/app.router.dart';
@@ -25,7 +29,11 @@ class DmPageViewModel extends FutureViewModel<bool> {
   }
 
   void navigateToJumpToScreen() {
+<<<<<<< HEAD
     navigationService.navigateTo(Routes.dmJumpToView);
+=======
+    navigationService.navigateTo(Routes.jumpToView);
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
   }
 
   @override

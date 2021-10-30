@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:zurichat/constants/app_strings.dart';
 import 'package:zurichat/general_widgets/custom_textfield.dart';
 import 'package:zurichat/ui/shared/long_button.dart';
@@ -12,6 +13,20 @@ import 'package:stacked/stacked_annotations.dart';
 
 import '../../shared/colors.dart';
 
+=======
+import 'package:zurichat/utilities/constants/app_strings.dart';
+import 'package:zurichat/ui/shared/dumb_widgets/custom_textfield.dart';
+import 'package:zurichat/ui/shared/dumb_widgets/long_button.dart';
+import 'package:zurichat/utilities/constants/text_styles.dart';
+
+import 'package:zurichat/ui/shared/dumb_widgets/zuri_loader.dart';
+import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
+import 'package:stacked/stacked.dart';
+import 'package:stacked/stacked_annotations.dart';
+
+import '../../../utilities/constants/colors.dart';
+
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import '../../shared/shared.dart';
 
 import 'sign_up_view.form.dart';
@@ -179,7 +194,13 @@ class SignUpView extends StatelessWidget with $SignUpView {
                             children: [
                               Text(
                                 TnC1,
+<<<<<<< HEAD
                                 style: AppTextStyle.lightGreySize12,
+=======
+                                style: _dark
+                                    ? AppTextStyle.whiteSize12
+                                    : AppTextStyle.lightGreySize12,
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
                               ),
                               GestureDetector(
                                 onTap: () =>

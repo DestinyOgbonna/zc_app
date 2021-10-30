@@ -1,10 +1,17 @@
 import 'package:flutter/material.dart';
 
 import 'package:zurichat/ui/shared/shared.dart';
+<<<<<<< HEAD
 import 'package:zurichat/ui/shared/text_styles.dart';
 import 'package:zurichat/ui/shared/zuri_appbar.dart';
 import 'package:zurichat/ui/view/organization/invite_to_organization/invite_via_email/invite_viewmodel.dart';
 import 'package:zurichat/utilities/internalization/localization/app_localization.dart';
+=======
+import 'package:zurichat/utilities/constants/text_styles.dart';
+import 'package:zurichat/ui/shared/dumb_widgets/zuri_appbar.dart';
+import 'package:zurichat/ui/view/organization/invite_to_organization/invite_via_email/invite_viewmodel.dart';
+import 'package:zurichat/utilities/internationalization/app_localization.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 
 import 'package:stacked/stacked.dart';
 
@@ -83,20 +90,31 @@ class CreateInviteLink extends StatelessWidget {
                 SizedBox(
                   child: Column(
                     children: [
+<<<<<<< HEAD
 
                       ListTile(
                         leading: const Icon(
 
+=======
+                      ListTile(
+                        leading: const Icon(
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
                           Icons.link_sharp,
                         ),
                         title: Text(local.shareInviteLink),
                       ),
                       UIHelper.horizontalSpaceSmall,
+<<<<<<< HEAD
 
                       Text(
                         local.shareLinkText,
                       ),
 
+=======
+                      Text(
+                        local.shareLinkText,
+                      ),
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
                     ],
                   ),
                 ),

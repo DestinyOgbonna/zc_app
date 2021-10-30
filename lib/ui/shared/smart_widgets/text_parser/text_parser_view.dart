@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_parsed_text/flutter_parsed_text.dart';
+<<<<<<< HEAD
 import 'package:zurichat/ui/shared/text_styles.dart';
+=======
+import 'package:zurichat/utilities/constants/text_styles.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'package:stacked/stacked.dart';
 
 import 'text_parser_viewmodel.dart';

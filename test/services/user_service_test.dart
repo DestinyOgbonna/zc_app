@@ -1,6 +1,10 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:zurichat/app/app.locator.dart';
+<<<<<<< HEAD
 import 'package:zurichat/services/user_service.dart';
+=======
+import 'package:zurichat/services/in_review/user_service.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 
 void main() {
   group('UserServiceTest -', () {

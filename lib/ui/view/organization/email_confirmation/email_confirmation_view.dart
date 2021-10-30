@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+<<<<<<< HEAD:lib/ui/view/organization/email_confirmation/email_confirmation_view.dart
 import 'package:zurichat/ui/shared/colors.dart';
 import 'package:zurichat/ui/shared/text_styles.dart';
 import 'package:zurichat/utilities/internalization/localization/app_localization.dart';
+=======
+import 'package:zurichat/utilities/constants/colors.dart';
+import 'package:zurichat/utilities/constants/text_styles.dart';
+import 'package:zurichat/utilities/internationalization/app_localization.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6:lib/ui/view/workspace/email_confirmation/email_confirmation_view.dart
 import 'package:stacked/stacked.dart';
 
 import 'email_confirmation_viewmodel.dart';

@@ -32,6 +32,7 @@ void main() {
     });
 
     group('navigation tests -', () {
+<<<<<<< HEAD
       test('When called, verify that the addPluginView is displayed', () {
         model.navigateToAdd();
         verify(navigationService.navigateTo(Routes.addPluginView));
@@ -45,6 +46,11 @@ void main() {
       test('When called, verify that the pluginView is displayed', () {
         model.navigateToPlugins();
         verify(navigationService.navigateTo(Routes.pluginView));
+=======
+      test('When called, verify that the pluginView is displayed', () {
+        model.navigateToPlugins();
+        verify(navigationService.navigateTo(Routes.pluginPage));
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
       });
 
       test('When called, verify that the user is taken to the home screen', () {

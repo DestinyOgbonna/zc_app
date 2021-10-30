@@ -3,11 +3,19 @@ import 'package:stacked_services/stacked_services.dart';
 
 import '../../../../app/app.locator.dart';
 import '../../../../app/app.router.dart';
+<<<<<<< HEAD
 import '../../../../package/base/server-request/organization_request/organization_api_service.dart';
 import '../../../../services/local_storage_services.dart';
 import '../../../../services/user_service.dart';
 import '../../../../utilities/storage_keys.dart';
 import '../../../shared/colors.dart';
+=======
+import '../../../../services/core_services/organization_api_service.dart';
+import '../../../../services/app_services/local_storage_services.dart';
+import '../../../../services/in_review/user_service.dart';
+import '../../../../utilities/constants/storage_keys.dart';
+import '../../../../utilities/constants/colors.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 
 class OrganizationUrlViewModel extends BaseViewModel {
   final _navigationService = locator<NavigationService>();

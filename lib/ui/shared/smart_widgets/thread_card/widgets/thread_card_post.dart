@@ -5,7 +5,11 @@ import 'package:stacked/stacked.dart';
 
 import '../../../../../models/user_post.dart';
 import '../../../shared.dart';
+<<<<<<< HEAD
 import '../../../text_styles.dart';
+=======
+import '../../../../../utilities/constants/text_styles.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import '../../text_parser/text_parser_view.dart';
 import '../thread_card_viewmodel.dart';
 import 'package:zurichat/app/app.logger.dart';

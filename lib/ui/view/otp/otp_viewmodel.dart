@@ -1,14 +1,26 @@
+<<<<<<< HEAD
 import 'package:zurichat/constants/app_strings.dart';
 import 'package:zurichat/package/base/server-request/api/zuri_api.dart';
+=======
+import 'package:zurichat/utilities/constants/app_strings.dart';
+import 'package:zurichat/utilities/api_handlers/zuri_api.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 
 import '../../../app/app.locator.dart';
 import '../../../app/app.router.dart';
+<<<<<<< HEAD
 import '../../../services/local_storage_services.dart';
 import '../../../utilities/constants.dart';
 import '../../../utilities/enums.dart';
 import '../../../utilities/storage_keys.dart';
+=======
+import '../../../services/app_services/local_storage_services.dart';
+import '../../../utilities/constants/app_constants.dart';
+import '../../../utilities/enums.dart';
+import '../../../utilities/constants/storage_keys.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'otp_view.form.dart';
 
 class OTPViewModel extends FormViewModel {

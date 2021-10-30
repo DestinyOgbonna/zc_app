@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
+<<<<<<< HEAD:lib/ui/shared/bottom_sheets/profile_botton_sheet/widgets/custom_button.dart
 import '../../../colors.dart';
+=======
+import '../../../../../utilities/constants/colors.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6:lib/ui/shared/bottom_sheets/widgets/custom_button.dart
 
 enum _CustomButtonType { normal, icon }
 

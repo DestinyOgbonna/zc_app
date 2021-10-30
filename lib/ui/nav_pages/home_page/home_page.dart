@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:zurichat/general_widgets/easy_container.dart';
 import 'package:zurichat/ui/nav_pages/home_page/home_page_viewmodel.dart';
 import 'package:zurichat/ui/nav_pages/home_page/widgets/home_expanded.dart';
@@ -9,6 +10,16 @@ import 'package:zurichat/ui/shared/text_styles.dart';
 import 'package:zurichat/ui/shared/zuri_appbar.dart';
 import 'package:zurichat/utilities/constants.dart';
 import 'package:zurichat/utilities/internalization/localization/app_localization.dart';
+=======
+import 'package:zurichat/ui/nav_pages/home_page/home_page_viewmodel.dart';
+import 'package:zurichat/ui/nav_pages/home_page/widgets/home_expanded.dart';
+import 'package:zurichat/ui/nav_pages/home_page/widgets/home_list_items.dart';
+import 'package:zurichat/utilities/constants/colors.dart';
+import 'package:zurichat/utilities/constants/text_styles.dart';
+import 'package:zurichat/ui/shared/dumb_widgets/zuri_appbar.dart';
+import 'package:zurichat/utilities/constants/app_constants.dart';
+import 'package:zurichat/utilities/internationalization/app_localization.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'package:stacked/stacked.dart';
 
 import 'widgets/home_list_items.dart';
@@ -83,6 +94,7 @@ class HomePage extends StatelessWidget {
             ],
           ),
         ),
+<<<<<<< HEAD
         //TODO
         // floatingActionButton: FloatingActionButton(
         //   onPressed: vmodel.navigateToStartDMScreen,
@@ -93,6 +105,8 @@ class HomePage extends StatelessWidget {
         //   ),
         //   backgroundColor: AppColors.zuriPrimaryColor,
         // ),
+=======
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
       ),
     );
   }
@@ -144,6 +158,7 @@ class HomePage extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(zSideMargin, 0, zSideMargin, 0),
       child: GestureDetector(
         onTap: () => vmodel.onJumpToScreen(),
+<<<<<<< HEAD
         child: EasyContainer(
           height: 50,
           radius: 7,
@@ -151,6 +166,16 @@ class HomePage extends StatelessWidget {
           alignment: Alignment.centerLeft,
           borderWidth: 1.5,
           borderColor: Colors.grey[300],
+=======
+        child: Container(
+          height: 50,
+          padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+          alignment: Alignment.centerLeft,
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(7),
+              border:
+                  Border.all(color: AppColors.greyBackgroundColor, width: 1.5)),
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
           child: Text(
             local!.jumpTo,
             style: AppTextStyle.darkGreySize14,

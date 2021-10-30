@@ -1,6 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:zurichat/ui/shared/colors.dart';
+=======
+import 'package:zurichat/utilities/constants/colors.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 
 class TextBox extends StatelessWidget {
   final String hint;

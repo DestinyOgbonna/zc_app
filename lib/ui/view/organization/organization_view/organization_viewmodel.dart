@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 import 'package:zurichat/constants/app_strings.dart';
 import 'package:zurichat/ui/nav_pages/home_page/widgets/home_list_items.dart';
 import 'package:zurichat/ui/shared/colors.dart';
+=======
+import 'package:zurichat/utilities/constants/app_strings.dart';
+import 'package:zurichat/ui/nav_pages/home_page/widgets/home_list_items.dart';
+import 'package:zurichat/utilities/constants/colors.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 
@@ -8,11 +14,19 @@ import '../../../../app/app.locator.dart';
 import '../../../../app/app.logger.dart';
 import '../../../../app/app.router.dart';
 import '../../../../models/organization_model.dart';
+<<<<<<< HEAD
 import '../../../../package/base/server-request/organization_request/organization_api_service.dart';
 import '../../../../services/connectivity_service.dart';
 import '../../../../services/local_storage_services.dart';
 import '../../../../utilities/enums.dart';
 import '../../../../utilities/storage_keys.dart';
+=======
+import '../../../../services/core_services/organization_api_service.dart';
+import '../../../../services/app_services/connectivity_service.dart';
+import '../../../../services/app_services/local_storage_services.dart';
+import '../../../../utilities/enums.dart';
+import '../../../../utilities/constants/storage_keys.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 
 class OrganizationViewModel extends BaseViewModel {
   final log = getLogger('OrganizationViewModel');

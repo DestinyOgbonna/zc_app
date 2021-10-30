@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+<<<<<<< HEAD
 import 'package:zurichat/constants/app_strings.dart';
 
 import 'package:zurichat/ui/shared/text_styles.dart';
@@ -9,6 +10,15 @@ import 'package:zurichat/ui/shared/shared.dart';
 import 'package:zurichat/ui/view/channel/channel_info/channel_info_view_model.dart';
 import 'package:stacked/stacked.dart';
 import '../../../../shared/colors.dart';
+=======
+import 'package:zurichat/utilities/constants/app_strings.dart';
+
+import 'package:zurichat/utilities/constants/text_styles.dart';
+import 'package:zurichat/ui/shared/shared.dart';
+import 'package:zurichat/ui/view/channel/channel_info/channel_info_view_model.dart';
+import 'package:stacked/stacked.dart';
+import '../../../../../utilities/constants/colors.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 
 class SecondSection extends StatelessWidget {
   const SecondSection({Key? key}) : super(key: key);

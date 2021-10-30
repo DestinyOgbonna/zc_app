@@ -1,12 +1,21 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:zurichat/ui/shared/shared.dart';
+<<<<<<< HEAD
 import 'package:zurichat/ui/shared/text_styles.dart';
 import 'package:zurichat/ui/shared/zuri_appbar.dart';
 import 'package:zurichat/utilities/internalization/localization/app_localization.dart';
 import 'package:stacked/stacked.dart';
 
 import '../../../general_widgets/menu_item_tile.dart';
+=======
+import 'package:zurichat/utilities/constants/text_styles.dart';
+import 'package:zurichat/ui/shared/dumb_widgets/zuri_appbar.dart';
+import 'package:zurichat/utilities/internationalization/app_localization.dart';
+import 'package:stacked/stacked.dart';
+
+import '../../shared/dumb_widgets/menu_item_tile.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'preference_viewmodel.dart';
 
 class PreferenceView extends StatelessWidget {
@@ -50,6 +59,10 @@ class PreferenceView extends StatelessWidget {
                 selected: model.isDarkMode,
                 subtitle: Text(model.currentTheme),
               ),
+<<<<<<< HEAD
+=======
+              //TODO
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
               // MenuItemTile(
               //   text: Text(local.advanced, style: _menuTitleStyle),
               //   onPressed: model.navigateToAdvanced,

@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chips_input/flutter_chips_input.dart';
 import 'package:google_fonts/google_fonts.dart';
+<<<<<<< HEAD
 import 'package:zurichat/constants/app_strings.dart';
+=======
+import 'package:zurichat/utilities/constants/app_strings.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 
 import '../../../../models/start_dm_models.dart';
 import '../../../../utilities/utilities.dart';

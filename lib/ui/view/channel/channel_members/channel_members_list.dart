@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+<<<<<<< HEAD
 import 'package:zurichat/constants/app_strings.dart';
 import 'package:zurichat/models/channel_members.dart';
 import 'package:zurichat/models/channel_model.dart';
@@ -10,6 +11,18 @@ import 'package:zurichat/ui/shared/text_styles.dart';
 import 'package:zurichat/ui/shared/zuri_appbar.dart';
 import 'package:zurichat/utilities/internalization/localization/app_localization.dart';
 import '../../../shared/colors.dart';
+=======
+import 'package:zurichat/utilities/constants/app_strings.dart';
+import 'package:zurichat/ui/shared/dumb_widgets/menu_item_tile.dart';
+import 'package:zurichat/models/channel_members.dart';
+import 'package:zurichat/models/channel_model.dart';
+import 'package:zurichat/utilities/constants/colors.dart';
+
+import 'package:zurichat/utilities/constants/text_styles.dart';
+import 'package:zurichat/ui/shared/dumb_widgets/zuri_appbar.dart';
+import 'package:zurichat/utilities/internationalization/app_localization.dart';
+import '../../../../utilities/constants/colors.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'package:stacked/stacked.dart';
 import '../shared_widgets.dart';
 import 'channel_members_list_model.dart';
@@ -69,6 +82,7 @@ class ChannelMembersList extends StatelessWidget {
                 padding: const EdgeInsets.fromLTRB(25.0, 24.0, 16.0, 0),
                 child: GestureDetector(
                   onTap: () {},
+<<<<<<< HEAD
                   child: CustomPluginPageListTile(
                     leadingIcon: const Icon(
                       Icons.add,
@@ -76,6 +90,17 @@ class ChannelMembersList extends StatelessWidget {
                     ),
                     text: local.addPeople,
                     textColor: AppColors.zuriPrimaryColor,
+=======
+                  child: MenuItemTile(
+                    icon: const Icon(
+                      Icons.add,
+                      color: AppColors.zuriPrimaryColor,
+                    ),
+                    text: Text(
+                      local.addPeople,
+                      style: AppTextStyle.greenSize14,
+                    ),
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
                   ),
                 ),
               ),

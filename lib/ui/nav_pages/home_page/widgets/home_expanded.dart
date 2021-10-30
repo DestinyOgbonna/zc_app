@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:zurichat/ui/nav_pages/home_page/widgets/home_list_items.dart';
+<<<<<<< HEAD
 import 'package:zurichat/ui/shared/colors.dart';
 import 'package:zurichat/ui/shared/text_styles.dart';
 import 'package:zurichat/utilities/constants.dart';
+=======
+import 'package:zurichat/utilities/constants/colors.dart';
+import 'package:zurichat/utilities/constants/text_styles.dart';
+import 'package:zurichat/utilities/constants/app_constants.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'package:zurichat/utilities/enums.dart';
 
 import '../home_item_model.dart';

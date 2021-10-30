@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:zurichat/ui/shared/zuri_appbar.dart';
+=======
+import 'package:zurichat/ui/shared/dumb_widgets/zuri_appbar.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'package:stacked/stacked.dart';
 
 import '../../nav_pages/home_page/widgets/custom_channel_list_tile.dart';

@@ -1,4 +1,5 @@
 import 'package:zurichat/app/app.logger.dart';
+<<<<<<< HEAD
 import 'package:zurichat/constants/app_strings.dart';
 import 'package:zurichat/models/channel_members.dart';
 import 'package:zurichat/models/channel_model.dart';
@@ -7,11 +8,25 @@ import 'package:zurichat/package/base/server-request/channels/channels_api_servi
 import 'package:zurichat/services/user_service.dart';
 import 'package:zurichat/ui/view/channel/channel_members/channel_members_list.dart';
 import 'package:zurichat/utilities/constants.dart';
+=======
+import 'package:zurichat/utilities/constants/app_strings.dart';
+import 'package:zurichat/models/channel_members.dart';
+import 'package:zurichat/models/channel_model.dart';
+import 'package:zurichat/utilities/api_handlers/zuri_api.dart';
+import 'package:zurichat/services/messaging_services/channels_api_service.dart';
+import 'package:zurichat/services/in_review/user_service.dart';
+import 'package:zurichat/ui/view/channel/channel_members/channel_members_list.dart';
+import 'package:zurichat/utilities/constants/app_constants.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 import '../../../../app/app.locator.dart';
 import '../../../../app/app.router.dart';
+<<<<<<< HEAD
 import '../../../../services/local_storage_services.dart';
+=======
+import '../../../../services/app_services/local_storage_services.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import '../../../../utilities/enums.dart';
 
 class ChannelInfoViewModel extends BaseViewModel {
@@ -77,6 +92,10 @@ class ChannelInfoViewModel extends BaseViewModel {
   }
 
   getChannelInfo() async {
+<<<<<<< HEAD
+=======
+    //TODO LOOK AT THIS PLACE - HARD-CODED CHANNEL ID
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
     const channel_id = '613f70bd6173056af01b4aba';
     const endpoint = '$ChannelInfoEndpoint$channel_id/';
 

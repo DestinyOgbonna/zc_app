@@ -1,12 +1,21 @@
 import 'dart:io';
 
 import 'package:zurichat/app/app.locator.dart';
+<<<<<<< HEAD
 import 'package:zurichat/constants/app_strings.dart';
 import 'package:zurichat/models/user_model.dart';
 import 'package:zurichat/package/base/server-request/api/zuri_api.dart';
 import 'package:zurichat/services/media_service.dart';
 import 'package:zurichat/services/user_service.dart';
 import 'package:zurichat/utilities/constants.dart';
+=======
+import 'package:zurichat/utilities/constants/app_strings.dart';
+import 'package:zurichat/models/user_model.dart';
+import 'package:zurichat/utilities/api_handlers/zuri_api.dart';
+import 'package:zurichat/services/app_services/media_service.dart';
+import 'package:zurichat/services/in_review/user_service.dart';
+import 'package:zurichat/utilities/constants/app_constants.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'package:zurichat/utilities/enums.dart';
 import 'package:zurichat/utilities/mixins/validators_mixin.dart';
 import 'package:stacked/stacked.dart';
@@ -47,7 +56,12 @@ class EditProfileViewModel extends BaseViewModel with ValidatorMixin {
 
   void setState() => notifyListeners();
 
+<<<<<<< HEAD
   void onChanged({String? disp, String? bo, String? phn, String? name, File? file}) {
+=======
+  void onChanged(
+      {String? disp, String? bo, String? phn, String? name, File? file}) {
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
     {
       if (disp != null) displayName = disp;
       if (bo != null) bio = bo;
@@ -58,12 +72,20 @@ class EditProfileViewModel extends BaseViewModel with ValidatorMixin {
     }
   }
 
+<<<<<<< HEAD
   Future<UserModel> updateData() async{
+=======
+  Future<UserModel> updateData() async {
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
     if (validateNotEmptyField(fullName) != null) {
       _snackbarService.showCustomSnackBar(
           message: 'Fullname cannot be null', variant: SnackbarType.failure);
     }
+<<<<<<< HEAD
     if(imageFile != null){
+=======
+    if (imageFile != null) {
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
       imageUrl = await uploadPic();
     }
     fullName = fullName.trim();
@@ -110,9 +132,14 @@ class EditProfileViewModel extends BaseViewModel with ValidatorMixin {
     if (displayName != userModel.displayName ||
         bio != userModel.bio ||
         phone != userModel.phoneNumber ||
+<<<<<<< HEAD
         (fullName.isNotEmpty && fullName != userModel.fullName ) ||
         imageFile != null
     ) {
+=======
+        (fullName.isNotEmpty && fullName != userModel.fullName) ||
+        imageFile != null) {
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
       return true;
     } else {
       return false;
@@ -126,16 +153,33 @@ class EditProfileViewModel extends BaseViewModel with ValidatorMixin {
     );
 
     log.i('confirmationResponse confirmed: ${sheetResponse?.confirmed}');
+<<<<<<< HEAD
     if(sheetResponse != null){
       imageFile = await mediaService.getImage(fromGallery: sheetResponse.confirmed);
+=======
+    if (sheetResponse != null) {
+      imageFile =
+          await mediaService.getImage(fromGallery: sheetResponse.confirmed);
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
       notifyListeners();
     }
   }
 
   //TODO-- fix the plugIn parameter needed to upload user profile pic to the endpoint
+<<<<<<< HEAD
   Future<String> uploadPic() async{
     imageUrl = (await mediaService.uploadImage(imageFile,'6165f520375a4616090b8275'))!;
     return imageUrl;
   }
 
+=======
+  Future<String> uploadPic() async {
+    imageUrl = (await mediaService.uploadImage(
+      imageFile,
+  //TODO MOVE PLUGIN ID TO CONSTANTS
+      '6165f520375a4616090b8275',
+    ))!;
+    return imageUrl;
+  }
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 }

@@ -1,9 +1,21 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:zurichat/constants/app_strings.dart';
 
 import 'package:zurichat/ui/shared/text_styles.dart';
 import '../edit_channel_view_model.dart';
+=======
+<<<<<<< HEAD:lib/ui/nav_pages/plugin_page/widgets/custom_appbar.dart
+import 'package:zurichat/ui/nav_pages/plugin_page/plugin_viewmodel.dart';
+import 'package:zurichat/ui/shared/colors.dart';
+=======
+import 'package:zurichat/utilities/constants/app_strings.dart';
+
+import 'package:zurichat/utilities/constants/text_styles.dart';
+import '../edit_channel_view_model.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6:lib/ui/view/channel/edit_channel/widgets/edit_channel_appbar.dart
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 
 class CustomAppBars extends StatelessWidget implements PreferredSizeWidget {
   final String appbarTitle;
@@ -31,11 +43,43 @@ class CustomAppBars extends StatelessWidget implements PreferredSizeWidget {
         children: [
           Text(
             appbarTitle,
+<<<<<<< HEAD
             style: AppTextStyle.header6,
+=======
+<<<<<<< HEAD:lib/ui/nav_pages/plugin_page/widgets/custom_appbar.dart
+            style: const TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.w700,
+                color: AppColors.deepBlackColor),
+=======
+            style: AppTextStyle.header6,
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6:lib/ui/view/channel/edit_channel/widgets/edit_channel_appbar.dart
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
           ),
           GestureDetector(
             onTap: () {
               switch (appbarAction) {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD:lib/ui/nav_pages/plugin_page/widgets/custom_appbar.dart
+                case 'Edit':
+                  model.navigateToEdit();
+                  break;
+                case 'Done':
+                  model.navigateToPlugins();
+                  break;
+                case 'Add':
+                  model.navigateToPlugins();
+              }
+            },
+            child: Text(
+              appbarAction,
+              style: const TextStyle(
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.w400,
+                  color: AppColors.zuriPrimaryColor),
+=======
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
                 case Save:
                   model.editChannel();
                   break;
@@ -57,6 +101,10 @@ class CustomAppBars extends StatelessWidget implements PreferredSizeWidget {
                   style: AppTextStyle.greenSize16,
                 ),
               ),
+<<<<<<< HEAD
+=======
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6:lib/ui/view/channel/edit_channel/widgets/edit_channel_appbar.dart
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
             ),
           ),
         ],
@@ -70,7 +118,15 @@ class CustomAppBars extends StatelessWidget implements PreferredSizeWidget {
               icon: const Icon(Icons.arrow_back_ios, size: 16.0),
               onPressed: () {
                 if (appbarAction == 'Edit') {
+<<<<<<< HEAD
                   model.nToChannelInfo();
+=======
+<<<<<<< HEAD:lib/ui/nav_pages/plugin_page/widgets/custom_appbar.dart
+                  model.navigateToHome();
+=======
+                  model.nToChannelInfo();
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6:lib/ui/view/channel/edit_channel/widgets/edit_channel_appbar.dart
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
                 } else {
                   model.navigateBack();
                 }

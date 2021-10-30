@@ -1,7 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+<<<<<<< HEAD
 import 'package:zurichat/constants/app_strings.dart';
+=======
+import 'package:zurichat/utilities/constants/app_strings.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 
 import '../../../../shared/shared.dart';
 import '../../channel_info/widgets/textstyles.dart';

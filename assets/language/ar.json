@@ -272,5 +272,16 @@
     "created_this_channel": "أنشأ هذه القناة",
     "channel_intro_text": "هذه هي بداية ",
     "channel": "قناة",
+<<<<<<< HEAD
     "today": "اليوم"
+=======
+    "today": "اليوم",
+    "yes": "نعم",
+    "no": "لا",
+    "delete_message_prompt": "هل تريد حذف هذه الرسالة؟",
+    "chess_plugin": "البرنامج المساعد للشطرنج",
+    "member": "عضو",
+    "s": "س",
+    "pinned": "مثبت"
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 }

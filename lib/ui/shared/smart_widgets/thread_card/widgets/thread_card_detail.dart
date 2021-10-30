@@ -5,8 +5,13 @@ import 'package:zurichat/ui/shared/bottom_sheets/zuri_chat_bottomsheet.dart';
 import 'package:overlay_support/overlay_support.dart';
 import 'package:stacked/stacked.dart';
 
+<<<<<<< HEAD
 import '../../../colors.dart';
 import '../../../text_styles.dart';
+=======
+import '../../../../../utilities/constants/colors.dart';
+import '../../../../../utilities/constants/text_styles.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import '../../text_parser/text_parser_view.dart';
 import '../thread_card_viewmodel.dart';
 import 'emojis_list.dart';

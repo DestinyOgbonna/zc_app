@@ -1,6 +1,11 @@
 import 'package:flutter_test/flutter_test.dart';
+<<<<<<< HEAD
 import 'package:zurichat/models/app_model.dart';
 import 'package:zurichat/models/channel_members.dart';
+=======
+import 'package:zurichat/models/channel_members.dart';
+import 'package:zurichat/models/channel_model.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'package:zurichat/ui/view/channel/channel_list/channels_viewmodel.dart';
 import '../helpers/test_helpers.dart';
 

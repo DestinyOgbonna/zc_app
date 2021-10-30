@@ -1,10 +1,19 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'package:zurichat/constants/app_strings.dart';
 import 'package:zurichat/ui/shared/colors.dart';
 
 import 'package:zurichat/ui/shared/text_styles.dart';
 import 'package:zurichat/ui/shared/zuri_appbar.dart';
 import 'package:stacked/stacked.dart';
+=======
+import 'package:zurichat/ui/shared/smart_widgets/thread_card/thread_card_view.dart';
+import 'package:zurichat/utilities/constants/colors.dart';
+import 'package:zurichat/utilities/constants/text_styles.dart';
+import 'package:zurichat/ui/shared/dumb_widgets/zuri_appbar.dart';
+import 'package:stacked/stacked.dart';
+import 'package:zurichat/utilities/internationalization/app_localization.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'saved_items_viewmodel.dart';
 import 'widgets/saved_item_background.dart';
 
@@ -13,6 +22,10 @@ class SavedItemsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
+=======
+    final local = AppLocalization.of(context);
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
     final bool _dark = Theme.of(context).brightness == Brightness.dark;
     return ViewModelBuilder<SavedItemsViewModel>.reactive(
       onModelReady: (model) => model.savedItems,
@@ -21,7 +34,11 @@ class SavedItemsView extends StatelessWidget {
           leading: Icons.close_rounded,
           leadingPress: () => model.goBack(),
           orgTitle: Text(
+<<<<<<< HEAD
             SavedItems,
+=======
+            local!.savedItems,
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
             style: TextStyle(
               color: Theme.of(context).textTheme.bodyText1!.color,
             ),
@@ -47,23 +64,36 @@ class SavedItemsView extends StatelessWidget {
                             return AlertDialog(
                               actions: [
                                 ElevatedButton(
+<<<<<<< HEAD
                                     child: const Text("Yes"),
+=======
+                                    child: Text(local.yes),
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
                                     style: ElevatedButton.styleFrom(
                                       primary: AppColors.redColor,
                                     ),
                                     onPressed: () => model.deleteItem(index)),
                                 TextButton(
+<<<<<<< HEAD
                                   child: Text("No",
+=======
+                                  child: Text(local.no,
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
                                       style: AppTextStyle.greenSize14),
                                   onPressed: () => model.goBack(),
                                 ),
                               ],
+<<<<<<< HEAD
                               content: const Text(
                                   "Do you want to delete this message?"),
+=======
+                              content: Text(local.deleteMessagePrompt),
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
                             );
                           });
                     },
                     child: Padding(
+<<<<<<< HEAD
                       padding: const EdgeInsets.all(20),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -107,16 +137,25 @@ class SavedItemsView extends StatelessWidget {
                           const SizedBox(height: 10),
                         ],
                       ),
+=======
+                      padding: const EdgeInsets.all(8.0),
+                      child: ThreadCardView.threadChannelMain(
+                          model.savedBuilderList[index]),
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
                     ),
                   );
                 },
                 separatorBuilder: (context, index) {
+<<<<<<< HEAD
                   return Container(
                     margin: const EdgeInsets.only(left: 25),
                     height: 15,
                     width: double.infinity,
                     color: AppColors.greyishColor.withOpacity(0.15),
                   );
+=======
+                  return const Divider();
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
                 },
               ),
       ),

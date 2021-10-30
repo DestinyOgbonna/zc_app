@@ -11,7 +11,7 @@
 		<key>CFBundleInfoDictionaryVersion</key>
 		<string>6.0</string>
 		<key>CFBundleName</key>
-		<string>ZuriChat App</string>
+	<string>Zuri Chat</string>
 		<key>CFBundlePackageType</key>
 		<string>APPL</string>
 		<key>CFBundleShortVersionString</key>
@@ -44,10 +44,18 @@
 		<key>UIStatusBarHidden</key>
 		<false/>
 		<key>NSCameraUsageDescription</key>
+<<<<<<< HEAD
 		<String>To take user profile image</String>
 		<key>NSPhotoLibraryUsageDescription</key>
 		<String>To choose user profile image</String>
 		<key>NSMicrophoneUsageDescription</key>
 		<String>Used to capture audio for image picker plugin</String>
+=======
+		<string>To take user profile image</string>
+		<key>NSPhotoLibraryUsageDescription</key>
+		<string>To choose user profile image</string>
+		<key>NSMicrophoneUsageDescription</key>
+		<string>Used to capture audio for image picker plugin</string>
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 	</dict>
 </plist>

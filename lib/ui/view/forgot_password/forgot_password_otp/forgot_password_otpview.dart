@@ -1,12 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:zurichat/app/app.logger.dart';
+<<<<<<< HEAD:lib/ui/view/forgot_password/forgot_password_otp/forgot_password_otpview.dart
 import 'package:zurichat/constants/app_strings.dart';
 import 'package:zurichat/ui/shared/colors.dart';
 
 import 'package:zurichat/ui/shared/text_styles.dart';
 import 'package:zurichat/ui/shared/shared.dart';
 import 'package:zurichat/utilities/internalization/localization/app_localization.dart';
+=======
+import 'package:zurichat/utilities/constants/app_strings.dart';
+import 'package:zurichat/utilities/constants/colors.dart';
+
+import 'package:zurichat/utilities/constants/text_styles.dart';
+import 'package:zurichat/ui/shared/shared.dart';
+import 'package:zurichat/utilities/internationalization/app_localization.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6:lib/ui/view/forgot_password_otp/forgot_password_otpview.dart
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked/stacked_annotations.dart';

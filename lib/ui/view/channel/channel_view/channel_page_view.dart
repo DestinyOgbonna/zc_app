@@ -1,14 +1,25 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+<<<<<<< HEAD
 import 'package:zurichat/constants/app_strings.dart';
 import 'package:zurichat/general_widgets/no_connection_widget.dart';
 import 'package:zurichat/models/channel_model.dart';
 import 'package:zurichat/ui/shared/zuri_appbar.dart';
+=======
+import 'package:zurichat/utilities/constants/app_strings.dart';
+import 'package:zurichat/ui/shared/dumb_widgets/no_connection_widget.dart';
+import 'package:zurichat/models/channel_model.dart';
+import 'package:zurichat/ui/shared/dumb_widgets/zuri_appbar.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'package:zurichat/ui/view/channel/channel_view/widgets/channel_intro.dart';
 import 'package:zurichat/ui/view/expandable_textfield/expandable_textfield_screen.dart';
 import 'package:stacked/stacked.dart';
 import 'package:stacked/stacked_annotations.dart';
+<<<<<<< HEAD
+=======
+import 'package:zurichat/utilities/internationalization/app_localization.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import '../../../shared/shared.dart';
 
 import 'channel_page_viewmodel.dart';
@@ -35,6 +46,10 @@ class ChannelPageView extends StatelessWidget with $ChannelPageView {
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
+=======
+    final local = AppLocalization.of(context);
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
     return ViewModelBuilder<ChannelPageViewModel>.reactive(
       onModelReady: (model) {
         model.getDraft(channelId);
@@ -59,7 +74,11 @@ class ChannelPageView extends StatelessWidget with $ChannelPageView {
                 channelId,
                 channelMessagesController.text,
                 channelName,
+<<<<<<< HEAD
                 membersCount,
+=======
+                model.channelMembers.length,
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
                 public),
             whiteBackground: true,
             isDarkMode: Theme.of(context).brightness == Brightness.dark,
@@ -99,7 +118,11 @@ class ChannelPageView extends StatelessWidget with $ChannelPageView {
             ],
             title: "#$channelName",
             subtitle:
+<<<<<<< HEAD
                 "${model.channelMembers.length} member${model.channelMembers.length == 1 ? "" : "s"}",
+=======
+                "${model.channelMembers.length} ${local!.member}${model.channelMembers.length == 1 ? "" : "${local.s}"}",
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
           ),
           body: ExpandableTextFieldScreen(
             usercheck: model.checkUser,
@@ -107,7 +130,11 @@ class ChannelPageView extends StatelessWidget with $ChannelPageView {
             channelId: '$channelId',
             channelID: channelId.toString(),
             textController: channelMessagesController,
+<<<<<<< HEAD
             hintText: AddReply,
+=======
+            hintText: local.addAReply,
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
             sendMessage: model.sendMessage,
             widget: SingleChildScrollView(
               physics: const BouncingScrollPhysics(),

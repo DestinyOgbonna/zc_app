@@ -1,7 +1,11 @@
 import 'dart:io';
 
 import 'package:zurichat/app/app.locator.dart';
+<<<<<<< HEAD
 import 'package:zurichat/services/media_service.dart';
+=======
+import 'package:zurichat/services/app_services/media_service.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'package:stacked/stacked.dart';
 
 class ExpandableTextFieldScreenViewModel extends BaseViewModel {

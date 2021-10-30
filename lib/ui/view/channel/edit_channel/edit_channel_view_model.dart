@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 import 'package:zurichat/constants/app_strings.dart';
 import 'package:zurichat/package/base/server-request/api/zuri_api.dart';
 import 'package:zurichat/utilities/storage_keys.dart';
+=======
+import 'package:zurichat/utilities/constants/app_strings.dart';
+import 'package:zurichat/utilities/api_handlers/zuri_api.dart';
+import 'package:zurichat/utilities/constants/storage_keys.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 // import 'package:zurichat/utilities/utilities.dart';
 // import 'package:zurichat/utilities/utilities.dart';
 import 'package:stacked/stacked.dart';
@@ -8,8 +14,13 @@ import 'package:stacked_services/stacked_services.dart';
 
 import '../../../../app/app.locator.dart';
 import '../../../../app/app.router.dart';
+<<<<<<< HEAD
 import '../../../../services/local_storage_services.dart';
 import '../../../../utilities/constants.dart';
+=======
+import '../../../../services/app_services/local_storage_services.dart';
+import '../../../../utilities/constants/app_constants.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import '../../../../utilities/enums.dart';
 import 'edit_channel_view.form.dart';
 
@@ -46,7 +57,11 @@ class EditChannelViewModel extends FormViewModel {
     String _channelId = id;
     String orgId = storage.getString(StorageKeys.currentOrgId).toString();
     String endpoint = 'v1/$orgId/channels/$_channelId/';
+<<<<<<< HEAD
 
+=======
+    //TODO INCORRECT DESCRIPTION
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
     final des = {
       'description': descriptionValue,
       "name": "NewTest",

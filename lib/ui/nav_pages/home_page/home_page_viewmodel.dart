@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:zurichat/app/app.locator.dart';
 import 'package:zurichat/app/app.logger.dart';
 import 'package:zurichat/app/app.router.dart';
+<<<<<<< HEAD
 import 'package:zurichat/constants/app_strings.dart';
 import 'package:zurichat/models/channel_members.dart';
 import 'package:zurichat/models/channel_model.dart';
@@ -20,6 +21,25 @@ import 'package:zurichat/ui/view/dm_jump_to_view/dm_jump_to_view.dart';
 import 'package:zurichat/utilities/constants.dart';
 import 'package:zurichat/utilities/enums.dart';
 import 'package:zurichat/utilities/storage_keys.dart';
+=======
+import 'package:zurichat/ui/view/jump_to_view/jump_to_view.dart';
+import 'package:zurichat/utilities/constants/app_strings.dart';
+import 'package:zurichat/models/channel_members.dart';
+import 'package:zurichat/models/channel_model.dart';
+import 'package:zurichat/models/user_model.dart';
+import 'package:zurichat/utilities/api_handlers/zuri_api.dart';
+import 'package:zurichat/services/messaging_services/channels_api_service.dart';
+import 'package:zurichat/services/messaging_services/dms_api_service.dart';
+import 'package:zurichat/services/messaging_services/centrifuge_rtc_service.dart';
+import 'package:zurichat/services/app_services/connectivity_service.dart';
+import 'package:zurichat/services/app_services/local_storage_services.dart';
+import 'package:zurichat/services/app_services/notification_service.dart';
+import 'package:zurichat/services/in_review/user_service.dart';
+import 'package:zurichat/ui/nav_pages/home_page/home_item_model.dart';
+import 'package:zurichat/utilities/constants/app_constants.dart';
+import 'package:zurichat/utilities/enums.dart';
+import 'package:zurichat/utilities/constants/storage_keys.dart';
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
 import 'package:stacked/stacked.dart';
 import 'package:stacked_services/stacked_services.dart';
 
@@ -89,7 +109,11 @@ class HomePageViewModel extends StreamViewModel {
   }
 
   void navigateToJumpToScreen() {
+<<<<<<< HEAD
     _navigationService.navigateTo(Routes.dmJumpToView);
+=======
+    _navigationService.navigateTo(Routes.jumpToView);
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
   }
 
   void navigateToStartDMScreen() {
@@ -270,7 +294,11 @@ class HomePageViewModel extends StreamViewModel {
   }
 
   void onJumpToScreen() {
+<<<<<<< HEAD
     navigation.navigateWithTransition(DmJumpToView(),
+=======
+    navigation.navigateWithTransition(JumpToView(),
+>>>>>>> d476182eedbf5d11d9f89825370f6df78a7f0ad6
         transition: NavigationTransition.DownToUp);
   }
 
